@@ -3,60 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-    <h1 class="title">Daniel Rua - Riwi Developer</h1>
-    <nav>
-        <a href="#sobre-mi">Sobre Mi</a>
-        <a href="">Proyectos</a>
-        <a href="">Contacto</a>
-    </nav>
+        <figure><img class="img" src="fondo.jpg" alt=""></figure>
+        <nav class="nav">
+            <ul>
+                <li><a class="menu" href="#sobre-mi">SOBRE MI</a></li> 
+                <li><a class="menu" href="#proyecto">PROYECTOS</a></li> 
+                <li><a class="menu" href="#contacto">CONTACTO</a></li> 
+            </ul>
+        </nav>
     </header>
 
-    <section>
-        <h2 id="sobre-mi">Sobre mi</h2>
-        <p>Soy un chico extrovertido apasionados a las motos, mi hobbie es viajar y conocer lugares nuevos, me gusta el ingles </p>
-        <p>Y sere un futuro desarrolador de software.</p>
+    <section id="content">
+        <article class="article">
+            <h2 id="sobre-mi">SOBRE MI</h2>
+            <p>Soy un chico extrovertido apasionados a las motos, mi hobbie es viajar y conocer lugares nuevos, me gusta el ingles 
+            Y sere un futuro desarrolador de software.</p>
+        </article>        
     </section>
-    <ul>
-        <li>HTML</li>
-        <li>Python</li>
-        <li>...</li>
-    </ul>
-    <section>
-        <h2>Projects</h2>
-        <h3>Project 1: Login</h3>
-        <p>Este es mi primer proyecto, usando html y css</p>
+    <aside>
+        <h2>MIS HABILIDADES</h2>
+        <ul>
+            <li>HTML</li>
+            <li>Python</li>
+            <li>CSS</li>
+        </ul>
+    </aside>
+
+    <div class="clearflix"></div>
+    <h2 class="title" id="proyecto">PROYECTOS</h2>
+    <section class="contenedor" >
+        
+        <article class="contenedor-a">
+            <h3>Project 1: Login</h3>
+            <figure><img class="img2" src="Captura.png" alt="Login"></figure>
+            <button class="menu1"><a class="menu" href="https://danirua21.github.io/Login/" target="_blank">MIRAR</a></button>
+        </article>  
+        <article class="contenedor-a">
+            <h3>Project 2: Tienda</h3>
+            <figure><img class="img2" src="tienda.png" alt="Tienda"></figure>
+            <button class="menu1"><a class="menu" href="https://danirua21.github.io/Tienda/" target="_blank">MIRAR</a></button>
+        </article>  
+        <article class="contenedor-a">
+            <h3>Project : ---</h3>
+            <figure><img class="img2" src="" alt=""></figure>
+            
+        </article>  
+        
     </section>
-    <figure>
-        <img src="Captura.png" alt="" width="300">
-    </figure>
-    <table>
-        <tr>
-            <th>Login</th>
-            <th>HTML y CSS</th>
-            <th>file:///C:/Users/Daniel%20Rua/Downloads/Login/Login/index.html</th>
-        </tr>
-        <tr>
-            <tr>Portafolio</tr>
-            <tr>Html</tr>
-            <tr><a href="file:///C:/Users/Daniel%20Rua/Downloads/Login/Login/index.html">Mirar proyecto</a></tr>
-        </tr>
-    </table>
-    <form action="/send" method="post">
-        <label for="name">Nombre: </label>
-        <input type="text" id="name" name="name" required>
 
-        <label for="email">Correo: </label>
-        <input type="email" id="email" name="email" required>
+    <section id="contacto" class="contact-section">
+        <h2>Contacto</h2>
+        <form action="/send_email" method="post" id="contact-form">
 
-        <label for="message">Mensaje: </label>
-        <textarea id="message" name="message" rows="4" required> </textarea>
+            <input type="text" name="nombre" placeholder="Nombre" required>
 
-        <input type="submit" value="Enviar">
-    </form>
+            <input type="email" name="correo" placeholder="Correo Electronico" required>
+
+            <textarea name="message" placeholder="Mensaje" required> </textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
     <nav>
         <a href="" target="_blank">GitHub</a>
     </nav>
